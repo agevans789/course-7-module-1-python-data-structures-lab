@@ -4,5 +4,7 @@ def unique_majors(student_list):
     """
     Return a set of unique student majors using set comprehension.
     Extract the major field from each student record.
+
+    once listed, check that it is not duplicated in the set.
     """
-    pass
+    return {student[2] for student in student_list}
